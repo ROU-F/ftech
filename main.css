@@ -60,7 +60,6 @@ button {
   flex-direction: column;
   min-height: 100%;
   overflow: hidden;
-  width: 1940px;
 }
 
 /* .main-page-wrapper {
