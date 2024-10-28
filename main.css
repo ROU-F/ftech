@@ -231,7 +231,7 @@ button {
 .offers__item {
   /* width: calc(100% / 3 - 18px); */
   display: block;
-    width: 30%;
+    width: 32%;
     border: 1px solid #e6e6e6;
     box-sizing: border-box;
     float: left;
@@ -240,7 +240,7 @@ button {
 }
 
 .offer {
-   background: #fff;
+   background: #f7f7f7;
   border-radius: 4px;
   color: #010001;
   overflow: hidden;
@@ -285,7 +285,7 @@ button {
   position: absolute;
   /* left: 50%;
   top: 50%; */
-  margin-left: 21px;
+  margin-left: 50px;
   margin-top: -40px;
   width: 300px;
 }
@@ -302,6 +302,7 @@ button {
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 19px;
+  position: relative;
 }
 
 .offer__prices {
@@ -350,17 +351,28 @@ button {
 }
 
 .news__item {
-  display: block;
-    width: 30%;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f7f7f7;
+    color: #455a64;
+    width: 300px;
+    height: 300px;
     border: 1px solid #e6e6e6;
     box-sizing: border-box;
     float: left;
     margin-right: 10px;
     margin-bottom: 10px;
+    border-radius: 20px;
 }
 
-.news__item:last-child {
-  margin-right: 0;
+.news__item:hover{
+  color:#ffc107;
+
+  text-decoration: none;
+  transition: .3s;
+  transform: scale(1.05);
+cursor: pointer;
 }
 
 .single-news__cover {
@@ -376,8 +388,8 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 25px 32px;
   min-height: 170px;
+  text-align: center;
 }
 
 .single-news__date {
@@ -388,9 +400,10 @@ button {
 }
 
 .single-news__title {
-  font-size: 24px;
+  font-size: 50px;
   font-weight: bold;
   margin-bottom: 5px;
+  text-decoration: none;
 }
 
 
@@ -855,31 +868,6 @@ button {
 
 /* welcome page*/
 
-.welcome {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  background: url("./img/decor/welcome-lion.jpg") center bottom / cover no-repeat;
-}
-
-.welcome--video {
-  background: url("./img/bg/video.jpg") center center no-repeat;
-}
-
-.welcome--video .btn {
-  font-weight: bold;
-  background: #ff5400;
-  border-radius: 100px;
-}
-
-.welcome--asia {
-  background: url("./img/bg/airasia.jpg") center center no-repeat;
-}
 
 .welcome--asia .btn {
   font-weight: bold;
@@ -1098,7 +1086,7 @@ button {
   border-radius: 4px;
   border: none;
   background: #fff;
-  padding: 22px 30px;
+  padding: 22px 10px;
   font-size: 18px;
   color: #202123;
 }
@@ -1160,4 +1148,11 @@ button {
 
 .form__btn:last-child {
   margin-right: 0;
+}
+
+.duble{
+  bottom: 46px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
